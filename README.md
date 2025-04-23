@@ -1,1 +1,1 @@
-"# Enhanced Game Collection" 
+# Enhanced Game Collection
