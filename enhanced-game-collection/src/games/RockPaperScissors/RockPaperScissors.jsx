@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import "./RockPaperScissors.css";
 
 const choices = ["rock", "paper", "scissors"];
@@ -48,6 +50,9 @@ export default function RockPaperScissors() {
           </button>
         ))}
       </div>
+
+      <Link to="/" className="back-button">← Back to Home</Link>
+
       {result && (
         <div className="results">
           <p>You chose: <strong>{playerChoice}</strong></p>
