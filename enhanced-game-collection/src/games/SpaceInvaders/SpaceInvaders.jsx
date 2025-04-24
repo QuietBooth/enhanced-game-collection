@@ -161,7 +161,7 @@ export default function SpaceInvaders() {
       <p className="tip">← Move | → Move | Space to Shoot</p>
       <p>Level: {level} | Score: {score} | Lives: {lives}</p>
 
-      <div className="grid">
+      <div className="space-grid">
         {[...Array(gridCols * gridRows)].map((_, i) => {
           const x = i % gridCols;
           const y = Math.floor(i / gridCols);

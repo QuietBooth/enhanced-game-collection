@@ -93,7 +93,7 @@ export default function Frogger() {
     <div className="frogger-container" tabIndex={0} onKeyDown={handleKeyDown}>
       <h1>🐸 Frogger</h1>
       <p>Lives: {lives} | Score: {score} {invincible && "🛡️"}</p>
-      <div className="grid">
+      <div className="frogger-grid">
         {[...Array(gridSize.rows * gridSize.cols)].map((_, i) => {
           const x = i % gridSize.cols;
           const y = Math.floor(i / gridSize.cols);
