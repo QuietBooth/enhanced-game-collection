@@ -6,6 +6,7 @@ import WhacAMole from "./games/WhacAMole/WhacAMole";
 import Breakout from "./games/Breakout/Breakout";
 import Frogger from "./games/Frogger/Frogger";
 import ConnectFour from "./games/ConnectFour/ConnectFour";
+import SpaceInvaders from "./games/SpaceInvaders/SpaceInvaders";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/breakout" element={<Breakout />} />
         <Route path="/frogger" element={<Frogger/>} />
         <Route path="/connect-four" element={<ConnectFour />} />
+        <Route path="/space-invaders" element={<SpaceInvaders />} />
       </Routes>
     </Router>
   );
