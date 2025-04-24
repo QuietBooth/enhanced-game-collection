@@ -4,6 +4,7 @@ import RockPaperScissors from "./games/RockPaperScissors/RockPaperScissors";
 import MemoryGame from "./games/MemoryGame/MemoryGame";
 import WhacAMole from "./games/WhacAMole/WhacAMole";
 import Breakout from "./games/Breakout/Breakout";
+import Frogger from "./games/Frogger/Frogger";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/memory-game" element={<MemoryGame />} />
         <Route path="/whac-a-mole" element={<WhacAMole />} />
         <Route path="/breakout" element={<Breakout />} />
+        <Route path="/frogger" element={<Frogger/>} />
       </Routes>
     </Router>
   );

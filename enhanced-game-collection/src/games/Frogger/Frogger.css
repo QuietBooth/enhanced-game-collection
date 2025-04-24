@@ -1,0 +1,39 @@
+.frogger-container {
+  text-align: center;
+  outline: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  gap: 2px;
+  margin: 20px auto;
+  width: max-content;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border: 1px solid #999;
+}
+
+.cell.frog {
+  background-color: green;
+  border: 2px solid #000;
+}
+
+.cell.obstacle {
+  background-color: red;
+}
+
+.back-button {
+  text-decoration: none;
+  background: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  display: inline-block;
+}
