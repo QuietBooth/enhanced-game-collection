@@ -1,0 +1,47 @@
+.whac-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.hole {
+  width: 100px;
+  height: 100px;
+  background-color: #222;
+  border-radius: 50%;
+  position: relative;
+}
+
+.mole {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.mole:active {
+  transform: scale(0.9);
+}
+
+.mole.bonus {
+  background-color: gold;
+}
+
+.mole.normal {
+  background-color: brown;
+}

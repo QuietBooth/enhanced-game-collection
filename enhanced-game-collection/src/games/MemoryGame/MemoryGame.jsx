@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./MemoryGame.css";
 
 const CARD_PAIRS = ["🍕", "🍔", "🍟", "🌭", "🍩", "🍿"];
@@ -85,6 +86,8 @@ export default function MemoryGame() {
           </div>
         ))}
       </div>
+
+      <Link to="/" className="back-button">← Back to Home</Link>
 
       {showWinMessage && (
         <div className="popup">

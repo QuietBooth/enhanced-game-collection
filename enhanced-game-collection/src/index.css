@@ -29,3 +29,19 @@ body {
   background-color: #272727;
   transform: scale(1.05);
 }
+
+.back-button {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  background: #333;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.back-button:hover {
+  background: #555;
+}
+
