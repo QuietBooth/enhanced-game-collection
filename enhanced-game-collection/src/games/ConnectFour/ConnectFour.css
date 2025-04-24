@@ -1,0 +1,52 @@
+.connect-four {
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  gap: 5px;
+  margin: 20px auto;
+  width: fit-content;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #eee;
+  border-radius: 50%;
+  border: 2px solid #333;
+  transition: transform 0.2s ease;
+}
+
+.cell.red {
+  background-color: red;
+}
+
+.cell.yellow {
+  background-color: gold;
+}
+
+.cell:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.back-button {
+  text-decoration: none;
+  background: #333;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.winner {
+  font-size: 1.5rem;
+  color: green;
+  margin-top: 1rem;
+}
